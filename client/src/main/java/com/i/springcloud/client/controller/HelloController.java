@@ -15,7 +15,8 @@ public class HelloController {
     String port;
 
     @GetMapping("sayName")
-    public String sayName(String name){
+    public String sayName(String name) throws Exception{
+        Thread.sleep(6000);
         return name+",I am port:"+port;
     }
 
