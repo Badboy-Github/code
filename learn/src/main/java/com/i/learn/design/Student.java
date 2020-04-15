@@ -15,6 +15,6 @@ public abstract class Student extends Person{
         this.school = school;
     }
 
-    public abstract void work();
+    protected abstract void work();
 
 }
