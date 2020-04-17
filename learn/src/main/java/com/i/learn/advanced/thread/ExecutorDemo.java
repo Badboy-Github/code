@@ -18,6 +18,8 @@ public class ExecutorDemo {
             // 执行并获取Future对象
             Future future = pool.submit(c);
             list.add(future);
+            Thread1 thread1 = new Thread1();
+            pool.execute(thread1);
         }
         // 关闭线程池
         pool.shutdown();

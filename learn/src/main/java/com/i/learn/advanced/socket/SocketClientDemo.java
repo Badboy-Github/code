@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class SocketClient {
+public class SocketClientDemo {
 
     public static void main(String[] args) throws IOException {
         String serverIp = "localhost";
