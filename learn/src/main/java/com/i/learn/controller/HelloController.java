@@ -12,7 +12,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(HttpServletRequest request, HttpServletResponse response,Integer data) throws IOException {
-//        response.sendError(400,"错误测试");
-        return null;
+        return "hello";
     }
 }

@@ -15,6 +15,8 @@ public class FilterDemo implements Filter {
         for(Map.Entry<String,String[]> entry : map.entrySet()){
             System.out.println("key="+entry.getKey()+",value="+entry.getValue()[0]);
         }
+        // 把请求传回过滤链
+        filterChain.doFilter(servletRequest,servletResponse);
     }
 
     @Override
