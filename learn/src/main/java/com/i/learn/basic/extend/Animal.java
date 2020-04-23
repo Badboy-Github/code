@@ -1,4 +1,4 @@
-package com.i.learn.design;
+package com.i.learn.basic.extend;
 
 public class Animal {
 
@@ -24,5 +24,9 @@ public class Animal {
 
     public void speak(){
         System.out.println("I am an animal, i can speak.");
+    }
+
+    protected void move(){
+        System.out.println("I can move.");
     }
 }

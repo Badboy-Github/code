@@ -1,6 +1,6 @@
 package com.i.learn.design.single;
 
-import com.i.learn.design.Person;
+import com.i.learn.basic.extend.Person;
 
 public class SingleDemo {
 

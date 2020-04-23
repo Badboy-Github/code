@@ -1,5 +1,7 @@
 package com.i.learn.advanced.generic;
 
+import com.i.learn.advanced.lock.LockDemo;
+
 public class MaximumTest {
 
     // 比较三个值并返回最大值
@@ -24,6 +26,7 @@ public class MaximumTest {
 
         System.out.printf( "%s, %s 和 %s 中最大的数为 %s\n","pear",
                 "apple", "orange", maximum( "pear", "apple", "orange" ) );
+
     }
 
 }

@@ -1,4 +1,4 @@
-package com.i.learn.design;
+package com.i.learn.basic.extend;
 
 public class Person extends Animal {
 

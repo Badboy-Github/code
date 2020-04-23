@@ -1,4 +1,4 @@
-package com.i.learn.design;
+package com.i.learn.basic.extend;
 
 /**
  * 实现抽象类

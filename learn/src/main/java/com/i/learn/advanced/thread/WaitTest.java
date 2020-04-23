@@ -11,6 +11,7 @@ public class WaitTest {
                 t1.start();
                 // 主线程等待t1通过notify()唤醒。
                 System.out.println(Thread.currentThread().getName()+" wait()");
+                t1.wait();
                 t1.join();  //  等待t1线程执行完毕
                 System.out.println(Thread.currentThread().getName()+" continue");
             }catch (Exception e){
