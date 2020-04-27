@@ -5,6 +5,11 @@ public class DoubleCheck {
 
     private static volatile DoubleCheck instance;
 
+    // private修饰构造方法避免类被外部实例化
+    private DoubleCheck(){
+
+    }
+
     public static DoubleCheck getInstance(){
         // 第一次检查保证性能
         if(instance == null){

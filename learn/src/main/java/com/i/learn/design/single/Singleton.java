@@ -7,6 +7,11 @@ public class Singleton {
         private static final Singleton INSTANCE = new Singleton();
     }
 
+    // private修饰构造方法避免类被外部实例化
+    private Singleton(){
+
+    }
+
     public static final Singleton getInstance(){
         return SingletonHolder.INSTANCE;
     }
