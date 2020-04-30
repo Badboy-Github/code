@@ -3,7 +3,7 @@ package com.i.learn.design.behavior.strategy;
 public class StrategyDemo {
     public static void main(String[] args){
         Integer[] a = {4,5,1,3};
-        ArraySort arraySort = new InsertSort();
+        ArraySort arraySort = new BinaryTreeSort();
         SortTool sortTool = new SortTool();
         sortTool.setArraySort(arraySort);
         sortTool.sort(a);
