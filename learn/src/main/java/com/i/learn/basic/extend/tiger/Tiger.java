@@ -7,6 +7,11 @@ import com.i.learn.basic.extend.felidae.Felidae;
  */
 public class Tiger extends Felidae {
 
+    @Override
+    protected void climbTree() {
+        System.out.println("Tiger can climb tree.");
+    }
+
     public static void main(String[] args){
         Tiger tiger = new Tiger();
         // 子类可以访问从父类继承的protected方法

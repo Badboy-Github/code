@@ -19,9 +19,30 @@ public class MapDemo {
             i.next();
         }
         // 使用ConcurrentHashMap
-        Map<String,String> result = new ConcurrentHashMap<>();
-        result.put("key","value");
-
+        Map<String,Integer> result = new ConcurrentHashMap<>();
+        result.put("key1",2);
+        result.put("key2",2);
+        result.get("key1");
+        Comparator<Map.Entry<String,Integer>> c = Map.Entry.comparingByKey();
+        int j = c.compare(result.entrySet().iterator().next(),result.entrySet().iterator().next());
+        int k = 0;
+        // null验证
+        Map<String,Object> t = new Hashtable<>();
+        map.put(null,3);
+        System.out.println("HashMap的key和value可为null"+map.get(null));
+        // 验证Hashtable的key
+        t.put("key","value");
+        try{
+            t.put(null,3);
+        }catch (Exception e){
+            System.out.println("Hashtable的key不能为空");
+        }
+        // 验证Hashtable的value
+        try{
+            t.put("3",null);
+        }catch (Exception e){
+            System.out.println("Hashtable的value不能为空");
+        }
     }
 
 }
