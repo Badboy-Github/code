@@ -29,7 +29,9 @@ public class MapDemo {
         // null验证
         Map<String,Object> t = new Hashtable<>();
         map.put(null,3);
-        System.out.println("HashMap的key和value可为null"+map.get(null));
+        map.put("key",null);
+        System.out.println("HashMap的key可为null"+map.get(null));
+        System.out.println("HashMap的value可为null"+map.get("key"));
         // 验证Hashtable的key
         t.put("key","value");
         try{
